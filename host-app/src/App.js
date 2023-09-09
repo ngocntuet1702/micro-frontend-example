@@ -1,7 +1,8 @@
 import React from "react";
+import VueWrapper from "./VueWrapper";
 const RemoteApp = React.lazy(() => import("Remote/App"));
 const RemoteButton = React.lazy(() => import("Remote/Button"));
- 
+
 const RemoteWrapper = ({ children }) => (
  <div
    style={{
@@ -32,6 +33,8 @@ export const App = () => {
       </RemoteWrapper>
       <br />
       <a href="http://localhost:4000">Link to Remote App</a>
+      <VueWrapper />
+      <a href="http://localhost:8082">Link to Vue App</a>
     </div>
 )};
 export default App;

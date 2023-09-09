@@ -39,6 +39,7 @@ module.exports = {
     name: "Host",
     remotes: {
       Remote: `Remote@http://localhost:4000/moduleEntry.js`,
+      VueApp: `VueApp@http://localhost:8082/vueEntry.js`
     },
     // shared: {
     //   ...dependencies,
